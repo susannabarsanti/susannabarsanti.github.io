@@ -2,7 +2,7 @@
   --bg: #fafaf8;
   --text: #1f2320;
   --muted: #5a6058;
-  --accent: #2f6e5c;
+  --accent: #8a6a12;
   --card-bg: #ffffff;
   --border: #e3e2dd;
   --max-width: 780px;
@@ -13,7 +13,7 @@
     --bg: #14171a;
     --text: #e8e9e5;
     --muted: #a3aaa1;
-    --accent: #7fd4b8;
+    --accent: #d4a94e;
     --card-bg: #1c2023;
     --border: #2a2f32;
   }
@@ -39,13 +39,21 @@ body {
   margin: 0 auto;
 }
 
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
 .avatar {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
   border: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .hero h1 {
@@ -55,7 +63,7 @@ body {
 }
 
 .subtitle {
-  margin: 0 0 1.5rem;
+  margin: 0;
   color: var(--muted);
   font-size: 1.05rem;
 }
@@ -64,6 +72,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
+  margin-top: 1.75rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.9rem;
 }

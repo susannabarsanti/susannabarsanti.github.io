@@ -11,9 +11,13 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <img class="avatar" src="assets/img/profile.png" alt="Portrait of Susanna Barsanti">
-    <h1>Susanna Barsanti</h1>
-    <p class="subtitle">Postdoctoral Researcher · University College Dublin (UCD)</p>
+    <div class="hero-top">
+      <div>
+        <h1>Susanna Barsanti</h1>
+        <p class="subtitle">Postdoctoral Researcher · University College Dublin (UCD)</p>
+      </div>
+      <img class="avatar" src="assets/img/profile.png" alt="Portrait of Susanna Barsanti">
+    </div>
     <nav class="hero-nav">
       <a href="#about">About</a>
       <a href="#research">Research</a>
@@ -51,10 +55,9 @@
 
     <div class="research-intro">
       <span class="research-icon research-icon--lg" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 4a8 8 0 0 1 0 16 4 4 0 0 1 0-8 4 4 0 0 0 0-8"/>
-          <circle cx="12" cy="4" r="1" fill="currentColor" stroke="none"/>
-          <circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="12" cy="12" rx="10" ry="3.4"/>
+          <circle cx="12" cy="12" r="4.3" fill="currentColor" stroke="none"/>
         </svg>
       </span>
       <div>
@@ -109,7 +112,7 @@
           <p>
             Python package for the fast generation of gravitational waves
             from asymmetric binaries with scalar fields, building on
-            FastEMRIWaveforms (FEW).
+            <a href="https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms" target="_blank" rel="noopener">FastEMRIWaveforms (FEW)</a>.
           </p>
           <div class="card-links">
             <a href="https://github.com/susannabarsanti/ModifiedEMRIWaveforms" target="_blank" rel="noopener">
