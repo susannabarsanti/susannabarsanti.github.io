@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Susanna Barsanti</title>
-<meta name="description" content="Pagina personale di Susanna Barsanti — ricerca in fisica.">
+<meta name="description" content="Susanna Barsanti's personal page — physics research.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,13 +12,13 @@
 <header class="hero">
   <div class="hero-inner">
     <h1>Susanna Barsanti</h1>
-    <p class="subtitle"> Postdoctoral Researcher · University College Dublin </p>
+    <p class="subtitle">Postdoctoral Researcher · University College Dublin (UCD)</p>
     <nav class="hero-nav">
-      <a href="#about">Chi sono</a>
-      <a href="#research">Ricerca</a>
-      <a href="#projects">Progetti</a>
-      <a href="#publications">Pubblicazioni</a>
-      <a href="#contact">Contatti</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -26,68 +26,115 @@
 <main>
 
   <section id="about">
-    <h2>Chi sono</h2>
+    <h2>About</h2>
     <p>
-      [Breve bio: chi sei, dove studi/lavori, quale area della fisica ti appassiona.
-      Esempio: "Sono una dottoranda in fisica presso [Istituto], mi occupo di
-      relatività generale e onde gravitazionali, con particolare interesse per..."]
+      Susanna is a postdoctoral researcher at University College Dublin (UCD),
+      working with Dr Niels Warburton. Originally from Pisa, she moved to Rome
+      for her PhD, spent a brief spell in Nottingham, and has now settled in
+      Dublin.
+    </p>
+    <p>
+      Her research sits at the intersection of General Relativity,
+      gravitational waves, black hole physics and alternative theories of
+      gravity — with a particular focus on strong-field tests of General
+      Relativity using asymmetric-mass compact binaries such as Extreme
+      Mass-Ratio Inspirals (EMRIs).
+    </p>
+    <p>
+      She earned her PhD from Sapienza University of Rome, supervised by
+      Professors Andrea Maselli, Leonardo Gualtieri and Paolo Pani. Before
+      joining UCD, she held an Angelo Della Riccia Fellowship at the
+      University of Nottingham.
     </p>
   </section>
 
   <section id="research">
-    <h2>Aree di ricerca</h2>
-    <ul class="tag-list">
-      <li>[Area di ricerca 1, es. Onde gravitazionali]</li>
-      <li>[Area di ricerca 2, es. EMRI (Extreme Mass Ratio Inspirals)]</li>
-      <li>[Area di ricerca 3]</li>
-    </ul>
-    <p>
-      [Descrizione più estesa del tuo filone di ricerca principale, motivazioni
-      e obiettivi.]
-    </p>
+    <h2>Research Areas</h2>
+    <div class="research-grid">
+      <article class="research-card">
+        <span class="research-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12c1.5 0 1.5-6 3-6s1.5 12 3 12 1.5-12 3-12 1.5 6 3 6 1.5-6 3-6 1.5 6 3 6"/>
+          </svg>
+        </span>
+        <h3>Gravitational Physics</h3>
+        <p>General Relativity, gravitational waves and black hole physics.</p>
+      </article>
+      <article class="research-card">
+        <span class="research-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/>
+            <ellipse cx="12" cy="12" rx="9" ry="3.8"/>
+            <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(60 12 12)"/>
+            <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(120 12 12)"/>
+          </svg>
+        </span>
+        <h3>EMRI Waveform Modelling</h3>
+        <p>Building accurate waveform models for Extreme Mass-Ratio Inspirals.</p>
+      </article>
+      <article class="research-card">
+        <span class="research-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v6M12 15v6M3 12h6M15 12h6M6 6l4.2 4.2M13.8 13.8 18 18M18 6l-4.2 4.2M10.2 13.8 6 18"/>
+          </svg>
+        </span>
+        <h3>Fundamental Physics</h3>
+        <p>Alternative theories of gravity and new physics beyond General Relativity and the Standard Model.</p>
+      </article>
+      <article class="research-card">
+        <span class="research-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V9M11 19V4M18 19v-7"/>
+            <path d="M2 19h20"/>
+          </svg>
+        </span>
+        <h3>Data Analysis</h3>
+        <p>Parameter estimation and forecasting via Fisher-matrix and Monte Carlo methods.</p>
+      </article>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Progetti</h2>
+    <h2>Projects</h2>
     <div class="card-grid">
       <article class="card">
         <h3>ModifiedEMRIWaveforms</h3>
         <p>
-          [Breve descrizione del progetto: cosa modella, quali modifiche alla
-          relatività generale esplora, tecnologie/librerie usate.]
+          [Short project description: what it models, which modifications to
+          general relativity it explores, technologies/libraries used.]
         </p>
         <a href="https://github.com/susannabarsanti/ModifiedEMRIWaveforms" target="_blank" rel="noopener">
-          Vedi su GitHub &rarr;
+          View on GitHub &rarr;
         </a>
       </article>
       <article class="card placeholder-card">
-        <h3>[Nome progetto]</h3>
-        <p>[Descrizione breve del progetto.]</p>
-        <a href="#" target="_blank" rel="noopener">Vedi su GitHub &rarr;</a>
+        <h3>[Project name]</h3>
+        <p>[Short project description.]</p>
+        <a href="#" target="_blank" rel="noopener">View on GitHub &rarr;</a>
       </article>
     </div>
   </section>
 
   <section id="publications">
-    <h2>Pubblicazioni</h2>
+    <h2>Publications</h2>
     <ul class="pub-list">
       <li>
-        <span class="pub-authors">[Autori]</span>,
-        <span class="pub-title">"[Titolo della pubblicazione]"</span>,
-        <span class="pub-venue">[Rivista/Conferenza, Anno]</span>.
+        <span class="pub-authors">[Authors]</span>,
+        <span class="pub-title">"[Publication title]"</span>,
+        <span class="pub-venue">[Journal/Conference, Year]</span>.
         <a href="#" target="_blank" rel="noopener">[link/DOI]</a>
       </li>
       <li>
-        <span class="pub-authors">[Autori]</span>,
-        <span class="pub-title">"[Titolo della pubblicazione]"</span>,
-        <span class="pub-venue">[Rivista/Conferenza, Anno]</span>.
+        <span class="pub-authors">[Authors]</span>,
+        <span class="pub-title">"[Publication title]"</span>,
+        <span class="pub-venue">[Journal/Conference, Year]</span>.
         <a href="#" target="_blank" rel="noopener">[link/DOI]</a>
       </li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2>Contatti</h2>
+    <h2>Contact</h2>
     <ul class="contact-list">
       <li><a href="mailto:susanna.barsanti@gmail.com">Email</a></li>
       <li><a href="https://github.com/susannabarsanti" target="_blank" rel="noopener">GitHub</a></li>
