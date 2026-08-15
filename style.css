@@ -136,10 +136,65 @@ h2 {
 }
 
 .research-icon-img {
-  width: 92px;
-  height: 92px;
+  width: 112px;
+  height: 112px;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.timeline {
+  list-style: none;
+  margin: 0.3rem 0 0;
+  padding: 0 0 0 1.1rem;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.timeline li {
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -1.36rem;
+  top: 0.2rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.timeline li.is-current::before {
+  background: var(--accent);
+}
+
+.timeline-place {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.timeline-role {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .research-grid {
@@ -228,8 +283,8 @@ h2 {
 }
 
 .project-logo {
-  width: 64px;
-  height: 64px;
+  width: 76px;
+  height: 76px;
   object-fit: contain;
   flex-shrink: 0;
   border-radius: 6px;
@@ -269,9 +324,42 @@ h2 {
   font-style: italic;
 }
 
-.pub-list a {
+.pub-venue {
   color: var(--accent);
-  margin-left: 0.4rem;
+  text-decoration: none;
+}
+
+.pub-venue:hover {
+  text-decoration: underline;
+}
+
+.teaching-list,
+.thesis-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.teaching-course,
+.thesis-title {
+  display: block;
+  font-style: italic;
+}
+
+.teaching-role,
+.thesis-student {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.thesis-cta {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
 }
 
 .contact-list {
