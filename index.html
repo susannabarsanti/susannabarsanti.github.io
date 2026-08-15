@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susanna Barsanti</title>
+<meta name="description" content="Pagina personale di Susanna Barsanti — ricerca in fisica.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Susanna Barsanti</h1>
+    <p class="subtitle">[Il tuo ruolo, es. Dottoranda in Fisica] · [Il tuo istituto]</p>
+    <nav class="hero-nav">
+      <a href="#about">Chi sono</a>
+      <a href="#research">Ricerca</a>
+      <a href="#projects">Progetti</a>
+      <a href="#publications">Pubblicazioni</a>
+      <a href="#contact">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>Chi sono</h2>
+    <p>
+      [Breve bio: chi sei, dove studi/lavori, quale area della fisica ti appassiona.
+      Esempio: "Sono una dottoranda in fisica presso [Istituto], mi occupo di
+      relatività generale e onde gravitazionali, con particolare interesse per..."]
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Aree di ricerca</h2>
+    <ul class="tag-list">
+      <li>[Area di ricerca 1, es. Onde gravitazionali]</li>
+      <li>[Area di ricerca 2, es. EMRI (Extreme Mass Ratio Inspirals)]</li>
+      <li>[Area di ricerca 3]</li>
+    </ul>
+    <p>
+      [Descrizione più estesa del tuo filone di ricerca principale, motivazioni
+      e obiettivi.]
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Progetti</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>ModifiedEMRIWaveforms</h3>
+        <p>
+          [Breve descrizione del progetto: cosa modella, quali modifiche alla
+          relatività generale esplora, tecnologie/librerie usate.]
+        </p>
+        <a href="https://github.com/susannabarsanti/ModifiedEMRIWaveforms" target="_blank" rel="noopener">
+          Vedi su GitHub &rarr;
+        </a>
+      </article>
+      <article class="card placeholder-card">
+        <h3>[Nome progetto]</h3>
+        <p>[Descrizione breve del progetto.]</p>
+        <a href="#" target="_blank" rel="noopener">Vedi su GitHub &rarr;</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Pubblicazioni</h2>
+    <ul class="pub-list">
+      <li>
+        <span class="pub-authors">[Autori]</span>,
+        <span class="pub-title">"[Titolo della pubblicazione]"</span>,
+        <span class="pub-venue">[Rivista/Conferenza, Anno]</span>.
+        <a href="#" target="_blank" rel="noopener">[link/DOI]</a>
+      </li>
+      <li>
+        <span class="pub-authors">[Autori]</span>,
+        <span class="pub-title">"[Titolo della pubblicazione]"</span>,
+        <span class="pub-venue">[Rivista/Conferenza, Anno]</span>.
+        <a href="#" target="_blank" rel="noopener">[link/DOI]</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contatti</h2>
+    <ul class="contact-list">
+      <li><a href="mailto:susanna.barsanti@gmail.com">Email</a></li>
+      <li><a href="https://github.com/susannabarsanti" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/[il-tuo-profilo]" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=[il-tuo-id]" target="_blank" rel="noopener">Google Scholar</a></li>
+      <li><a href="https://orcid.org/[il-tuo-orcid]" target="_blank" rel="noopener">ORCID</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Susanna Barsanti</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
