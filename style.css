@@ -136,8 +136,8 @@ h2 {
 }
 
 .research-icon-img {
-  width: 112px;
-  height: 112px;
+  width: 132px;
+  height: 132px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -283,8 +283,8 @@ h2 {
 }
 
 .project-logo {
-  width: 76px;
-  height: 76px;
+  width: 92px;
+  height: 92px;
   object-fit: contain;
   flex-shrink: 0;
   border-radius: 6px;
