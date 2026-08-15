@@ -374,7 +374,8 @@ h2 {
   color: var(--text);
 }
 
-.thesis-intro {
+.thesis-intro,
+.section-intro {
   margin: 0 0 1rem;
   color: var(--muted);
 }
@@ -382,6 +383,12 @@ h2 {
 .thesis-title {
   display: block;
   font-weight: 600;
+}
+
+.thesis-topic {
+  display: block;
+  font-style: italic;
+  margin-top: 0.3rem;
 }
 
 .thesis-student {
