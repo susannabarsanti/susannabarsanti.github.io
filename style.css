@@ -2,7 +2,7 @@
   --bg: #fafaf8;
   --text: #1f2320;
   --muted: #5a6058;
-  --accent: #9a7508;
+  --accent: #c4127e;
   --card-bg: #ffffff;
   --border: #e3e2dd;
   --max-width: 780px;
@@ -13,7 +13,7 @@
     --bg: #14171a;
     --text: #e8e9e5;
     --muted: #a3aaa1;
-    --accent: #e5b432;
+    --accent: #ff5fc0;
     --card-bg: #1c2023;
     --border: #2a2f32;
   }
