@@ -475,6 +475,11 @@ h2 {
   margin-top: 0.2rem;
 }
 
+.video-source a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 .contact-list {
   list-style: none;
   padding: 0;
