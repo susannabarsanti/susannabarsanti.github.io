@@ -19,9 +19,49 @@
   }
 }
 
+:root[data-theme="dark"] {
+  --bg: #14171a;
+  --text: #e8e9e5;
+  --muted: #a3aaa1;
+  --accent: #e5b432;
+  --card-bg: #1c2023;
+  --border: #2a2f32;
+}
+
+:root[data-theme="light"] {
+  --bg: #fafaf8;
+  --text: #1f2320;
+  --muted: #5a6058;
+  --accent: #9a7508;
+  --card-bg: #ffffff;
+  --border: #e3e2dd;
+}
+
 * { box-sizing: border-box; }
 
 a:visited { color: inherit; }
+
+.theme-toggle {
+  position: fixed;
+  top: 1.1rem;
+  right: 1.1rem;
+  z-index: 20;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
 
 body {
   margin: 0;
