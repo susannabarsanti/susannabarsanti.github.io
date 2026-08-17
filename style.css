@@ -380,6 +380,11 @@ h2 {
   color: var(--muted);
 }
 
+.section-intro a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 .thesis-title {
   display: block;
   font-weight: 600;
