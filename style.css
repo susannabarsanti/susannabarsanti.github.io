@@ -56,6 +56,23 @@ a:visited { color: inherit; }
   background: var(--card-bg);
   color: var(--text);
   cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+  border-color: var(--accent);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle:active {
+  transform: scale(0.96);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .theme-toggle svg {
@@ -164,6 +181,20 @@ h2 {
   align-items: flex-start;
   gap: 1.1rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.research-intro > div {
+  min-width: 0;
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .research-intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .research-intro h3 {
@@ -322,6 +353,12 @@ h2 {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-card > div {
+  min-width: 0;
+  flex: 1;
 }
 
 .project-logo {
@@ -334,6 +371,7 @@ h2 {
 
 .card-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
