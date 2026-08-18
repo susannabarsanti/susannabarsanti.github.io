@@ -329,6 +329,7 @@ h2 {
   margin: 0 0 0.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1.05rem;
+  overflow-wrap: break-word;
 }
 
 .card p {
