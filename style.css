@@ -39,7 +39,7 @@
 
 * { box-sizing: border-box; }
 
-a:visited { color: inherit; }
+:where(a:visited) { color: inherit; }
 
 .theme-toggle {
   position: fixed;
