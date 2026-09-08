@@ -116,8 +116,8 @@ main p {
 }
 
 .avatar {
-  width: 88px;
-  height: 88px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
