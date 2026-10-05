@@ -8,6 +8,10 @@
   --max-width: 780px;
 }
 
+@media (min-width: 900px) {
+  :root { --max-width: 920px; }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #14171a;
@@ -82,7 +86,7 @@
 
 body {
   margin: 0;
-  font-family: "Georgia", "Iowan Old Style", serif;
+  font-family: "Newsreader", "Georgia", "Iowan Old Style", serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
@@ -113,6 +117,7 @@ main p {
 
 .hero-top > div:first-child {
   flex: 1;
+  min-width: 0;
 }
 
 .avatar {
@@ -122,6 +127,15 @@ main p {
   object-fit: cover;
   border: 1px solid var(--border);
   flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .hero-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
 }
 
 .hero h1 {
@@ -143,6 +157,13 @@ main p {
   margin-top: 1.75rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.9rem;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  padding: 0.7rem 0;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .hero-nav a {
@@ -281,6 +302,13 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-color: var(--accent);
 }
 
 .research-icon {
@@ -323,6 +351,13 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-color: var(--accent);
 }
 
 .card h3 {
@@ -506,6 +541,13 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-color: var(--accent);
 }
 
 .video-wrap {
@@ -588,4 +630,25 @@ footer {
   color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.85rem;
+}
+
+.has-js main section {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.has-js main section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-card, .card, .video-card { transition: box-shadow 0.2s ease, border-color 0.2s ease; }
+  .research-card:hover, .card:hover, .video-card:hover { transform: none; }
+  .has-js main section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
